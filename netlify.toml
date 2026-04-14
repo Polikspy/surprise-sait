@@ -1,13 +1,12 @@
 [build]
   publish = "dist"
-  command = "pip install flet && flet publish main.py"
+  command = "flet publish main.py"
 
 [[headers]]
   for = "/*"
   [headers.values]
     Cross-Origin-Opener-Policy = "same-origin"
     Cross-Origin-Embedder-Policy = "require-corp"
-    Access-Control-Allow-Origin = "*"
 
 [[redirects]]
   from = "/*"
