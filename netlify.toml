@@ -1,6 +1,8 @@
-[build]
+[build.environment]
+  PYTHON_VERSION = "3.12"
+  [build]
   publish = "dist"
-  command = "flet publish main.py"
+  command = "pip install flet && flet publish main.py"
 
 [[headers]]
   for = "/*"
