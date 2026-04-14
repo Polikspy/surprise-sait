@@ -3,8 +3,13 @@
   [headers.values]
     Cross-Origin-Opener-Policy = "same-origin"
     Cross-Origin-Embedder-Policy = "require-corp"
+    Cache-Control = "public, max-age=0, must-revalidate"
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+
+[build]
+  publish = "build/web"
+  command = "pip install flet && flet build web --base-url /"
