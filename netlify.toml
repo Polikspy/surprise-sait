@@ -1,15 +1,14 @@
-[[headers]]
-  for = "/*"
-  [headers.values]
-    Cross-Origin-Opener-Policy = "same-origin"
-    Cross-Origin-Embedder-Policy = "require-corp"
-    Cache-Control = "public, max-age=0, must-revalidate"
+[build]
+  publish = "dist"
+  command = "pip install flet && flet publish main.py --no-version-check"
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
 
-[build]
-  publish = "dist"
-  command = "pip install flet && flet publish main.py"
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cross-Origin-Opener-Policy = "same-origin"
+    Cross-Origin-Embedder-Policy = "require-corp"
