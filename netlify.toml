@@ -11,5 +11,5 @@
   status = 200
 
 [build]
-  publish = "build/web"
-  command = "pip install flet && yes | flet build web --base-url /"
+  publish = "dist"
+  command = "pip install flet && flet publish main.py"
