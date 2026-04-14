@@ -1,6 +1,6 @@
 [build]
   publish = "dist"
-  command = "pip install flet && flet publish main.py --no-version-check"
+  command = "pip install flet && flet publish main.py"
 
 [[redirects]]
   from = "/*"
