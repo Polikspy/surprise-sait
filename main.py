@@ -60,4 +60,4 @@ def main(page: ft.Page):
         ], spacing=15))    
         page.add(card)
 
-ft.app(target=main,view=ft.AppView.WEB_BROWSER)
+ft.app(target=main)
